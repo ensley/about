@@ -1,0 +1,30 @@
+# Academic Papers and Presentations
+- event: Joint Statistics Meetings
+  location: Baltimore, MD
+  date: 31 Jul 2017
+  advisor: Dr. Ben Shaby, Pennsylvania State University
+  description: <em>Bayesian semiparametric covariance function estimation for stationary Gaussian processes by overwhelming force.</em> Presentation based on graduate research focusing on spatial statistics. Estimating covariance functions of stationary Gaussian processes in a fully Bayesian framework. While computation costs of the algorithm can be high, they are alleviated by parallelization on a GPU.
+
+- event: AMS/MAA Joint Mathematics Meetings
+  location: Baltimore, MD
+  date: 16 Jan 2014
+  advisor: Dr. James Abello, DIMACS, Rutgers University
+  description: '<em>My life as a Tweet Word.</em> Through Research Experience for Undergraduates (REU) program. Visualizing most talked-about topics on Twitter using dynamic graphs. Involved graph theory, semantic analysis, statistics, and extensive Java programming. Selected to present at the AMS Special Session on "Big Data: Mathematical and Statistical Modeling, Tools, Services and Training".'
+
+- event: AMS/MAA Joint Mathematics Meetings
+  location: San Diego, CA
+  date: 11 Jan 2013
+  advisor: Prof. Timothy Sauer, George Mason University
+  description: '<em>Paleoclimatology.</em> Through REU program. Used tree ring measurements correlated with global temperature data to estimate climate patterns of the past several centuries. Involved linear algebra concepts, singular value decomposition, data mining, and programming in MATLAB to estimate global climate patterns of the past 800 years. Presented at the AMS Session on Undergraduate Research in Applied Mathematics.'
+
+- event: MAA National Summer Meeting
+  location: Portland, OR
+  date: 6 Aug 2009
+  advisor: Dr. Luis Melara, Shippensburg University
+  description: Presented <em>A Numerical Study of an SIR Model</em>, Student Contributed Paper Session. Involved systems of differential equations, numerical analysis, and MATLAB programming, and implementation of a model in the context of real data related to the rubella virus.
+
+- event: Eastern PA and DE Section of the MAA
+  location: Collegeville, PA
+  date: 8 Nov 2008
+  advisor: Dr. Kathryn McGivney, Shippensburg University
+  description: Presented <em>How to Lose at Chutes & Ladders</em>, Student Contributed Paper Session. Involved independent study of Markov chains relating to optimal strategies for variations on the popular board game "Chutes and Ladders".

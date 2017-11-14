@@ -7,7 +7,11 @@
 
   <!-- Google font typography settings - defined in _config.yml -->
   {% if site.resume_theme == 'default' %}
-  <link href='https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,300,800,700' rel='stylesheet' type='text/css'>
+<!--   <link href='https://fonts.googleapis.com/css?family=Lora:400,700|Open+Sans:400,300,800,700' rel='stylesheet' type='text/css'>
+  {% endif %} -->
+  {% if site.fonts.typekit-id %}
+    <script src="https://use.typekit.net/{{ site.fonts.typekit-id }}.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
   {% endif %}
 
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">

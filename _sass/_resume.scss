@@ -10,7 +10,7 @@
   h2 {
     @include sans;
     font-weight: 900;
-    font-size: 1.75rem;
+    font-size: 2rem;
     letter-spacing: -.05rem;
     margin: 0;
   }
@@ -34,9 +34,13 @@
     font-size: 3rem;
     font-weight: 900;
     text-align: center;
-    letter-spacing: -.15rem;
     line-height: 1;
     margin: 1rem 0 2rem;
+
+    a {
+      color: $black;
+      text-decoration: none;
+    }
   }
 
   .header-contact-info {
@@ -54,8 +58,8 @@
 
     .header-title {
       @include sans;
-      font-weight: 300;
-      font-size: 1.75rem;
+      font-weight: 500;
+      font-size: 2rem;
       line-height: 2rem;
       letter-spacing: -.05rem;
       text-align: center;
@@ -135,13 +139,13 @@
   .resume-item-title {
     @include sans_bold;
     margin: 0 0 .75rem;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     letter-spacing: -.05rem;
     line-height: 1;
   }
 
   .resume-item-details {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
     margin: 0 0 .75rem;
     line-height: 1;
 
@@ -150,19 +154,25 @@
     }
   }
 
+  .resume-item-advisor {
+    border-left: 1px solid $black;
+    padding-left: .5rem;
+    font-size: 1rem;
+    margin: .5rem .75rem .75rem;
+    line-height: 1;
+  }
+
   .resume-item-title,
   .resume-item-details,
   .resume-item-copy,
-  .resume-item-list {
+  .resume-item-list,
+  .resume-item-advisor {
     a {
-      color: #333;
+      color: $black;
       text-decoration: none;
-      border-bottom: 1px solid;
-
-      &:hover {
-        border-bottom: none;
-        color: #9c9c9c;
-      }
+      position: relative;
+      text-shadow: -1px -1px 0 $white, 1px 1px 0 $white, -1px 1px 0 $white, 1px 1px 0 $white;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 1px, $black 1px, $black 2px, rgba(0, 0, 0, 0) 2px);
     }
   }
 

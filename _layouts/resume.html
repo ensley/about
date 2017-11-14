@@ -13,11 +13,13 @@
 
         <!-- You can turn off the avatar in _config.yml by setting to false -->
         {% if site.resume_avatar == 'true' %}
-        <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
+        <a href="http://john-ensley.com">
+          <img src="images/avatar.jpg" alt="my photo" class="avatar no-print" itemprop="image">
+        </a>
         {% endif %}
 
         <!-- Your name is defined in the _config.yml file -->
-        <h1 class="header-name" itemprop="name">{{ site.resume_name }}</h1>
+        <h1 class="header-name" itemprop="name"><a href="http://john-ensley.com">{{ site.resume_name }}</a></h1>
 
         <!-- Contact buttons don't work in print, configure in the _config.yml file, remove "print-only" to display always. -->
         <div class="header-contact-info print-only">
@@ -144,6 +146,34 @@
       </section>
       <!-- end Recognition -->
       {% endif %}
+
+      <!-- begin Presentations -->
+      {% if site.resume_section_presentations %}
+      <section class="content-section">
+        <header class="section-header">
+          <h2>Academic Papers and Presentations</h2>
+        </header>
+
+        {% for presentation in site.data.presentations %}
+        <div class="resume-item" itemscope itemtype="http://schema.org/CreativeWork">
+          <meta itemprop="creator" content="{{ site.resume_name }}" itemtype="http://schema.org/Person" />
+          <h3 class="resume-item-title">
+            {% if presentation.url %}
+              <a href="{{ presentation.url }}">{{ presentation.event }}</a>
+            {% else %}
+              {{ presentation.event }}
+            {% endif %}
+          </h3>
+          <h4 class="resume-item-details" itemprop="description">
+            {{ presentation.location }} &bull; {{ presentation.date }}
+          </h4>
+          <p class="resume-item-copy">{{ presentation.description }}</p>
+          <p class="resume-item-advisor">Advisor: {{ presentation.advisor }}</p>
+        </div>
+        {% endfor %}
+      </section>
+      {% endif %}
+      <!-- end Presentations -->
 
       {% if site.resume_section_associations %}
       <!-- begin Associations -->
